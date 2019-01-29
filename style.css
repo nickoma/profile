@@ -1,0 +1,124 @@
+body {
+  background-color: #DDDDDD;
+  color: #F0F0F0;
+  font-family: 'Merriweather', serif;
+}
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+}
+ h2, h3 {
+  font-family: 'Playfair Display', serif;
+  /*text-align: center;
+*/  line-height: 1.6;
+  color: #9D9FA7;
+}
+h1 {
+  font-size: 25px;
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #9D9FA7;
+  font-size: 15px;
+}
+a:hover {
+  color: red;
+}
+li {
+  display: inline-block;
+  display: inline;
+align-content: center;
+
+  /*padding: 10px;*/
+}
+p {
+  font-family: 'Playfair Display', serif;
+  t/*ext-align: center;*/
+  color: #9D9FA7;
+  font-size: 15px;
+}
+#logo-pic {
+    /*height: auto;*/
+  /*  align-content: center;*/
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:140px;
+}
+#div-pics {
+    height: auto;
+   /* align-content: left;*/
+    border-radius: 15px;
+    /*display: block;*/
+   /* margin-left: auto;
+    margin-right: 90%;*/
+    width:140px;
+}
+.social {
+      margin-inline-start: 28em;
+}
+.header {
+  text-align: center;
+
+}
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
